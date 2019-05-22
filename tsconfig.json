@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "target": "es5",
+    "module": "es6",
+    "declaration": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "alwaysStrict": true,
+    "strictPropertyInitialization": false,
+    "types": [],
+    "paths": {}
+  },
+  "exclude": [
+    "dist",
+    "webpack",
+    "tslint.json",
+    "**/tests/*"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+//  "awesomeTypescriptLoaderOptions": {
+//    "useCache": true,
+//    "forceIsolatedModules": true,
+//  }
+}
