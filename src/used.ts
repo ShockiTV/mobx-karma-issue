@@ -1,12 +1,8 @@
-import { inject, injectable } from "inversify";
-import { Imported } from "./imported";
+import {action, IActionFactory} from "mobx";
 
-@injectable()
 export class Used {
-    @inject(Imported)
-    private imported: Imported;
-
-    public test = () => {
-        return !!this.imported.action;
+    private action: IActionFactory;
+    constructor() {
+        this.action = action;
     }
 }
